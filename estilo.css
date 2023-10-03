@@ -1,0 +1,252 @@
+:root{
+    --cor-site: #F249A6;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+.maxWidth{
+    max-width: 90em; /*1440px / 16 = 90em*/
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header_logo{
+    width: 5.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header_nav{
+    background-color: var(--cor-site);
+}
+
+ul{
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, var(--cor-site) , white 20%);
+}
+
+@media screen and (min-width:48em){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        background-color: initial;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        color: var(--cor-site);
+        border-radius: 5px; /*único valor ao qual é permitido pixel*/
+    }
+
+    .header_nav a:hover{
+        background-color: color-mix(in srgb, var(--cor-site) , white 80%);
+    }
+}
+
+    .trailer{
+        background-color: #e4f2eb;
+        padding-bottom: 1.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        line-height: 1.5em;
+    }
+
+    .trailer div{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .trailer_title{
+        margin-top: 0;
+        padding-top: .5em;
+        color: var(--cor-site);
+    }
+
+    .trailer_title h1{
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .trailer_paragrafo{
+        font-size: 1.1em;
+    }
+
+    .trailer_botao{
+        display: inline-block;
+        margin-top: 1em;
+        padding: 1em 2em;
+        background-color: var(--cor-site);
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .trailer_botao:hover{
+        background-color: color-mix(in srgb, var(--cor-site) , white 20%);
+    }
+    
+    @media screen and (min-width:48em){
+        .trailer{
+            background-image: url(imagens/header_fundo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:  center top;
+            background-color: initial;
+        }
+        
+        .trailer_paragrafo{
+            margin-bottom: 2em;
+        }
+    }
+
+    .main_content{
+        background-color: #e1d9d9;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .main_content div{
+        margin: auto;
+        padding: 1em;
+        width: 80%;
+    }
+
+    .amin_content_title{
+        color: var(--cor-site);
+    }
+
+    .icon_img{
+        width: 5.5em;
+        transition: all 0.4s ease;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .col{
+        flex: 1 0 auto;
+        width: 100%;
+    }
+
+    .col-12{
+        width: 100%;
+    }
+
+    @media screen and (min-width:48em){
+        .col-6{
+            width: calc(50% - 2rem);
+        }
+    }
+
+    footer{
+        background-color: var(--cor-site);
+        color: white;
+        padding: 0.9em;
+        text-align: center;
+    }
+
+    @media screen and (min-width:48em){
+        .trailer_botao{
+            display: none;
+        }
+
+        .video_trailer{
+            text-align: center;
+            display: inline-block;
+        }
+    }
+
+
+    @media screen and (max-width:47em){
+          .video_trailer{
+              display: none;
+    }
+    }
+
+    .fonte{
+        font-family: 'Alex Brush', cursive;
+        font-size: 1.8em;
+        color: var(--cor-site);
+    }
+
+    .font_size{
+        font-family: 'Alex Brush', cursive;
+        font-size: 2.8em;
+    }
+
+    .fonte2{
+        font-family: 'Alex Brush', cursive;
+        font-size: 1.7em;
+    }
+
+    .saiba-mais_botao{
+        display: flex;
+        text-transform: uppercase;
+        color: white;
+        background-color: var(--cor-site);
+        padding: 1.1em;
+        border-radius: 8px;
+        text-decoration: none;
+        letter-spacing: .2em;
+        width: fit-content;
+        margin-top: 2em;
+       margin-left: auto;
+       margin-right: auto;
+       width: fit-content;
+    }
+
+    .saiba-mais_botao:hover{
+        background-color: color-mix(in srgb, var(--cor-site) , white 20%);
+    }
+
+    .icon_img:hover{
+        transform: scale(1.1);
+        transition-delay: 350ms;
+        transition-timing-function: ease-in-out;
+        transition-duration: 250ms;
+    }
